@@ -1,5 +1,7 @@
 .main-navigation {
-	display: block;
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column;
 	width: 100%;
 
 	ul {
@@ -51,6 +53,7 @@
 
 	li {
 		position: relative;
+		padding: 0 35px;
 
 		&:hover > a,
 		&.focus > a {
@@ -60,6 +63,8 @@
 	a {
 		display: block;
 		text-decoration: none;
+		text-transform: uppercase;
+		color: #fff;
 	}
 
 	.current_page_item > a,

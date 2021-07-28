@@ -1,0 +1,37 @@
+.main-cover {
+    padding: 350px 0;
+}
+
+.wp-block-cover {
+    .wp-block-cover__inner-container {
+        max-width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            margin-top: 0;
+            font-size: 2.50em;
+
+            @media (max-width: $medium-screen) {
+                font-size: 2em;
+            }
+
+            strong {
+                font-weight: 400;
+            }
+        }
+
+        .wp-block-columns {
+            .wp-block-column {
+                
+            }
+        }
+    }
+
+    .cover-logo {
+        max-width: 370px;
+        margin: 0;
+    }
+}

@@ -1,0 +1,41 @@
+.container-large {
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1455px;
+    margin: 0 auto;
+
+    @media (max-width: $xlarge-screen) {
+        max-width: 1190px;
+    }
+
+    @media (max-width: $large-screen) {
+        max-width: 980px;
+    }
+
+    @media (max-width: $medium-screen) {
+        max-width: 560px;
+    }
+
+    @media (max-width: $small-screen) {
+        max-width: 95%;
+    }
+}
+
+.row {
+    display: flex;
+}
+
+.custom-logo {
+    max-width: 110px;
+}
+
+.site-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    padding: 100px 0; //TODO
+}

@@ -1,0 +1,29 @@
+
+
+.services-section {
+
+    h3 {
+        position: relative;
+        font-size: 1.75em;
+
+        &::before {
+            position: absolute;
+            text-align: center;
+            content: '';
+            width: 80px;
+            left: 50%;
+            transform: translate(-50%);
+            bottom: -10px;
+            border: 1px solid $color__primary;
+        }
+    }
+
+    .service-column {
+        background-color: #fff;
+
+        h4 {
+            font-size: 0.8em;
+            margin: 35px;
+        }
+    }
+}
