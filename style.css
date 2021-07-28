@@ -387,11 +387,30 @@ button,
 input,
 select,
 optgroup,
-textarea {
+textarea,
+p {
   color: #404040;
   font-family: "Raleway", sans-serif, "Helvetica Neue", sans-serif;
-  font-size: 1rem;
+  font-size: 14px;
   line-height: 1.5;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+@media (max-width: 992px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 24px;
 }
 
 h1,
@@ -577,7 +596,7 @@ input[type="submit"]:focus {
 }
 
 .wp-block-button.button .wp-block-button__link {
-  font-size: 0.8em;
+  font-size: 14px;
   padding: 20px 70px;
   background-color: transparent;
   border: solid 3px #eb6f31;
@@ -757,6 +776,7 @@ textarea {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
+  font-size: 14px;
 }
 
 /* Small menu. */
@@ -942,21 +962,6 @@ textarea {
   align-items: center;
 }
 
-.wp-block-cover .wp-block-cover__inner-container h1 {
-  margin-top: 0;
-  font-size: 2.50em;
-}
-
-@media (max-width: 992px) {
-  .wp-block-cover .wp-block-cover__inner-container h1 {
-    font-size: 2em;
-  }
-}
-
-.wp-block-cover .wp-block-cover__inner-container h1 strong {
-  font-weight: 400;
-}
-
 /* Header
 --------------------------------------------- */
 .header-section {
@@ -968,8 +973,17 @@ textarea {
   margin: 0;
 }
 
+.header-section h2 {
+  margin-top: 0;
+  font-weight: 400;
+}
+
 /* Landing
 --------------------------------------------- */
+.landing-section h3 {
+  font-size: 24px;
+}
+
 .landing-section p {
   line-height: 2em;
 }
@@ -986,7 +1000,6 @@ textarea {
 
 .about-section .about-info h3 {
   position: relative;
-  font-size: 1.75em;
 }
 
 .about-section .about-info h3::before {
@@ -997,15 +1010,10 @@ textarea {
   border: 1px solid #eb6f31;
 }
 
-.about-section .about-info h4 {
-  font-size: 1.2em;
-}
-
 /* Services
 --------------------------------------------- */
 .services-section h3 {
   position: relative;
-  font-size: 1.75em;
 }
 
 .services-section h3::before {
@@ -1024,8 +1032,8 @@ textarea {
 }
 
 .services-section .service-column h4 {
-  font-size: 0.8em;
   margin: 35px;
+  font-size: 14px;
 }
 
 /*--------------------------------------------------------------

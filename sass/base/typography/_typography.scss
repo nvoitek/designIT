@@ -3,11 +3,28 @@ button,
 input,
 select,
 optgroup,
-textarea {
+textarea,
+p {
 	color: $color__text-main;
 	font-family: $font__main;
-	font-size: 1rem;
+	font-size: $font__regular_text;
 	line-height: $font__line-height-body;
+}
+
+h2 {
+	font-size: $font__large_heading;
+
+	@media (max-width: $medium-screen) {
+		font-size: $font__medium_heading;
+	}
+}
+
+h3 {
+	font-size: $font__medium_heading;
+}
+
+h4 {
+	font-size: $font__small_heading;
 }
 
 @import "headings";

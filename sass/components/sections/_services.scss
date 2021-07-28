@@ -2,7 +2,6 @@
 
     h3 {
         position: relative;
-        font-size: 1.75em;
 
         &::before {
             position: absolute;
@@ -20,8 +19,8 @@
         background-color: #fff;
 
         h4 {
-            font-size: 0.8em;
             margin: 35px;
+            font-size: $font__regular_text;
         }
     }
 }
