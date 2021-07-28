@@ -1,0 +1,9 @@
+.wp-block-columns {
+    flex-wrap: wrap;
+}
+
+.wp-block-column {
+    @media (max-width: $medium-screen) {
+        flex-basis: 100%;
+    }
+}
