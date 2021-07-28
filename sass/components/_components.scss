@@ -28,16 +28,20 @@
 
 /* Cover
 --------------------------------------------- */
-@import "content/cover";
+@import "content/block-cover";
 
-/* Column
+/* Header
 --------------------------------------------- */
-@import "content/column";
+@import "sections/header";
+
+/* Landing
+--------------------------------------------- */
+@import "sections/landing";
 
 /* About
 --------------------------------------------- */
-@import "content/about";
+@import "sections/about";
 
 /* Services
 --------------------------------------------- */
-@import "content/services";
+@import "sections/services";
