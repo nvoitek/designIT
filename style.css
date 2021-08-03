@@ -952,14 +952,26 @@ textarea {
   display: block;
 }
 
-/* Cover
+/* Block Cover
 --------------------------------------------- */
 .wp-block-cover .wp-block-cover__inner-container {
   max-width: 80%;
-  margin: auto;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* Block Columns
+--------------------------------------------- */
+.wp-block-columns {
+  flex-wrap: wrap;
+}
+
+@media (max-width: 992px) {
+  .wp-block-column {
+    flex-basis: 100%;
+  }
 }
 
 /* Header
@@ -980,6 +992,11 @@ textarea {
 
 /* Landing
 --------------------------------------------- */
+.landing-section {
+  padding: 100px 0;
+  background-color: #eb6f31;
+}
+
 .landing-section h3 {
   font-size: 24px;
 }
@@ -991,11 +1008,12 @@ textarea {
 /* About
 --------------------------------------------- */
 .about-section {
-  margin: 150px auto;
+  padding: 100px 0;
 }
 
 .about-section .about-info {
   padding: 60px;
+  padding-left: 0;
 }
 
 .about-section .about-info h3 {
@@ -1012,6 +1030,11 @@ textarea {
 
 /* Services
 --------------------------------------------- */
+.services-section {
+  padding: 100px 0;
+  background-color: #f8f8f8;
+}
+
 .services-section h3 {
   position: relative;
 }
@@ -1027,12 +1050,241 @@ textarea {
   border: 1px solid #eb6f31;
 }
 
-.services-section .service-column {
+.services-section .services {
+  padding-top: 30px;
+}
+
+.services-section .services .row {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.services-section .services .row .service {
+  flex-basis: 32%;
   background-color: #fff;
 }
 
-.services-section .service-column h4 {
+@media (max-width: 1200px) {
+  .services-section .services .row .service {
+    flex-basis: 49%;
+  }
+}
+
+@media (max-width: 992px) {
+  .services-section .services .row .service {
+    flex-basis: 100%;
+  }
+}
+
+.services-section .services .row .service h4 {
   margin: 35px;
+  font-size: 14px;
+}
+
+/* Products
+--------------------------------------------- */
+.products-section {
+  padding: 100px 0;
+  background-color: #313131;
+}
+
+.products-section h3 {
+  color: #fff;
+  position: relative;
+}
+
+.products-section h3::before {
+  position: absolute;
+  text-align: center;
+  content: '';
+  width: 80px;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: -10px;
+  border: 1px solid #eb6f31;
+}
+
+.products-section .container {
+  padding-top: 30px;
+}
+
+.products-section .container .row {
+  flex-wrap: wrap;
+}
+
+.products-section .container .row .wp-block-column {
+  margin: 0;
+  flex-basis: 31%;
+}
+
+@media (max-width: 1200px) {
+  .products-section .container .row .wp-block-column {
+    flex-basis: 49%;
+  }
+}
+
+@media (max-width: 992px) {
+  .products-section .container .row .wp-block-column {
+    flex-basis: 100%;
+  }
+}
+
+.products-section .container .row .wp-block-column .product .product-logo {
+  background-color: #eb6f31;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+.products-section .container .row .wp-block-column .product .product-info {
+  margin: 0;
+}
+
+.products-section .container .row .wp-block-column .product .product-info h4 {
+  color: #fff;
+  font-size: 16px;
+  margin-top: 0;
+}
+
+.products-section .container .row .wp-block-column .product .product-info p {
+  color: #858585;
+  line-height: 2em;
+}
+
+/* Gallery
+--------------------------------------------- */
+.custom-gallery.row {
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.custom-gallery.row .wp-block-column {
+  margin: 0;
+  flex-basis: 50%;
+}
+
+@media (max-width: 1350px) {
+  .custom-gallery.row .wp-block-column {
+    flex-basis: 100%;
+  }
+}
+
+.custom-gallery.row .wp-block-column .wp-block-image {
+  margin: 0;
+  height: 800px;
+}
+
+.custom-gallery.row .wp-block-column .wp-block-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.custom-gallery.row .wp-block-column .row {
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.custom-gallery.row .wp-block-column .row .wp-block-column {
+  margin: 0;
+  flex-basis: 50%;
+}
+
+@media (max-width: 992px) {
+  .custom-gallery.row .wp-block-column .row .wp-block-column {
+    flex-basis: 100%;
+  }
+}
+
+.custom-gallery.row .wp-block-column .row .wp-block-column .wp-block-image {
+  margin: 0;
+  height: 400px;
+}
+
+@media (max-width: 992px) {
+  .custom-gallery.row .wp-block-column .row .wp-block-column .wp-block-image {
+    height: 800px;
+  }
+}
+
+.custom-gallery.row .wp-block-column .row .wp-block-column .wp-block-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Since Cover
+--------------------------------------------- */
+.since-cover {
+  height: 660px;
+}
+
+/* Partners
+--------------------------------------------- */
+.partners-section {
+  padding: 100px 0;
+  background-color: #eb6f31;
+}
+
+.partners-section h3 {
+  color: #fff;
+  position: relative;
+}
+
+.partners-section h3::before {
+  position: absolute;
+  left: 0;
+  content: '';
+  width: 80px;
+  bottom: -10px;
+  border: 1px solid #bb5b2c;
+}
+
+/* News
+--------------------------------------------- */
+.news-section {
+  padding: 100px 0;
+}
+
+.news-section .news-info {
+  padding: 60px;
+  padding-left: 0;
+}
+
+.news-section .news-info h3 {
+  position: relative;
+}
+
+.news-section .news-info h3::before {
+  position: absolute;
+  content: '';
+  width: 80px;
+  bottom: -10px;
+  border: 1px solid #eb6f31;
+}
+
+.news-section .news-gallery {
+  margin: 0;
+}
+
+.news-section .news-gallery .row {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.news-section .news-gallery .row .wp-block-column {
+  margin: 0;
+  flex-basis: 45%;
+  margin: 5px;
+}
+
+.news-section .news-gallery .row .wp-block-column img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news-section .news-gallery .row .wp-block-column h4 {
   font-size: 14px;
 }
 

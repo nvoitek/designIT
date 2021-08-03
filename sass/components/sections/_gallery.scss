@@ -1,0 +1,59 @@
+.custom-gallery {
+
+    &.row {
+        margin: 0;
+        flex-wrap: wrap;
+
+        .wp-block-column {
+            margin: 0;
+
+            flex-basis: 50%;
+
+            @media (max-width: $xlarge-screen) {
+                flex-basis: 100%;
+            }
+
+            .wp-block-image {
+
+                margin: 0;
+                height: 800px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .row {
+                margin: 0;
+                flex-wrap: wrap;
+    
+                .wp-block-column {
+                    margin: 0;
+                    flex-basis: 50%;
+
+                    @media (max-width: $medium-screen) {
+                        flex-basis: 100%;
+                    }
+
+                    .wp-block-image {
+                
+                        margin: 0;
+                        height: 400px;
+
+                        @media (max-width: $medium-screen) {
+                            height: 800px;
+                        }
+        
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

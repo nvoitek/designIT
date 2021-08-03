@@ -1,5 +1,8 @@
 .services-section {
+    padding: 100px 0;
 
+    background-color: #f8f8f8;
+    
     h3 {
         position: relative;
 
@@ -15,12 +18,33 @@
         }
     }
 
-    .service-column {
-        background-color: #fff;
+    .services {
 
-        h4 {
-            margin: 35px;
-            font-size: $font__regular_text;
+        padding-top: 30px;
+
+        .row {
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .service {
+                flex-basis: 32%;
+
+                @media (max-width: $large-screen) {
+                    flex-basis: 49%;
+                }
+
+                @media (max-width: $medium-screen) {
+                    flex-basis: 100%;
+                }
+
+                background-color: #fff;
+
+        
+                h4 {
+                    margin: 35px;
+                    font-size: $font__regular_text;
+                }
+            }
         }
     }
 }

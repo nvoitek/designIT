@@ -35,3 +35,64 @@ function designit_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'designit_pingback_header' );
+
+/**
+ * Custom post types
+ */
+
+ function custom_post_services() {
+	register_post_type('service',
+		array(
+			'labels' => array(
+				'name' => __('Services', 'designit'),
+				'singular_name' => __('Service', 'designit'),
+			),
+			'public' => true,
+			'show-in-rest' => true,
+			'supports' => array ('title', 'editor', 'thumbnail'),
+			)
+		);
+ }
+
+ add_action( 'init', 'custom_post_services' );
+
+ /**
+  * Services shortcode
+  */
+
+function register_services_shortcode() {
+	ob_start();
+	?>
+
+	<div class="services container">
+		<?php 
+			$the_query = new WP_Query(array(
+				'post_type' => 'service',
+			));
+			?>
+
+			<div class="row">
+
+			<?php
+			while ($the_query->have_posts()):
+				$the_query->the_post(); 
+				?>
+
+				<div class="service">
+					<div class="service-thumbnail">
+						<?php echo get_the_post_thumbnail( get_the_ID(), 'large'); ?>
+					</div>
+					<?php the_content(); ?>
+				</div>
+
+			<?php endwhile; ?>
+
+			</div>
+	</div>
+
+	<?php
+	wp_reset_postdata();
+	return ob_get_clean();
+}
+
+add_shortcode( 'services', 'register_services_shortcode' );

@@ -26,9 +26,13 @@
 --------------------------------------------- */
 @import "media/galleries";
 
-/* Cover
+/* Block Cover
 --------------------------------------------- */
 @import "content/block-cover";
+
+/* Block Columns
+--------------------------------------------- */
+@import "content/block-columns";
 
 /* Header
 --------------------------------------------- */
@@ -45,3 +49,23 @@
 /* Services
 --------------------------------------------- */
 @import "sections/services";
+
+/* Products
+--------------------------------------------- */
+@import "sections/products";
+
+/* Gallery
+--------------------------------------------- */
+@import "sections/gallery";
+
+/* Since Cover
+--------------------------------------------- */
+@import "sections/since-cover";
+
+/* Partners
+--------------------------------------------- */
+@import "sections/partners";
+
+/* News
+--------------------------------------------- */
+@import "sections/news";
