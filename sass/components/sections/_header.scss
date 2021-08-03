@@ -1,5 +1,6 @@
 .header-section {
-    padding: 350px 0;
+    
+    @include large-section;
 
     .header-logo {    
         max-width: 370px;

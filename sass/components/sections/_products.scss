@@ -1,5 +1,6 @@
 .products-section {
-    padding: 100px 0;
+
+    @include medium-section;
 
     background-color: $color__secondary;
 
@@ -14,7 +15,8 @@
         
         padding-top: 30px;
 
-        .row {
+        .wp-block-columns {
+            
             flex-wrap: wrap;
 
             .wp-block-column {

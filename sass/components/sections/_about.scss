@@ -1,5 +1,6 @@
 .about-section {
-    padding: 100px 0;
+    
+    @include medium-section;
 
     .about-info {
         padding: 60px;

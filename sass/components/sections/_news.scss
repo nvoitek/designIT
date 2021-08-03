@@ -1,6 +1,6 @@
 .news-section {
-    
-    padding: 100px 0;
+
+    @include medium-section;
 
     .news-info {
         padding: 60px;
@@ -16,7 +16,7 @@
     .news-gallery {
         margin: 0;
 
-        .row {
+        .wp-block-columns {
             flex-wrap: wrap;
             justify-content: space-between;
     

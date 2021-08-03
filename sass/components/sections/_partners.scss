@@ -1,6 +1,6 @@
 .partners-section {
-
-    padding: 100px 0;
+    
+    @include medium-section;
 
     background-color: $color__primary;
 

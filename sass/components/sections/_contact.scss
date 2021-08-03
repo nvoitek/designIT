@@ -1,12 +1,13 @@
 .contact-section {
-    padding: 100px 0;
+
+    @include medium-section;
     background-color: $color__secondary;
 
     .contact-logo {
         width: 120px;
     }
 
-    .row {
+    .wp-block-columns {
         justify-content: space-around;
 
         .contact-info {

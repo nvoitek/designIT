@@ -1,5 +1,6 @@
 .site-footer {
-    padding: 30px 0;
+    
+    @include small-section;
     background-color: $color__quaternary;
 
     ul {
