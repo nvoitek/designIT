@@ -1253,18 +1253,28 @@ textarea {
   background-color: #eb6f31;
 }
 
-.partners-section h3 {
+.partners-section .wp-block-group .wp-block-group__inner-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.partners-section .wp-block-group .wp-block-group__inner-container h3 {
+  padding-right: 360px;
   color: #fff;
   position: relative;
 }
 
-.partners-section h3::before {
+.partners-section .wp-block-group .wp-block-group__inner-container h3::before {
   position: absolute;
   left: 0;
   content: '';
   width: 80px;
   bottom: -10px;
   border: 1px solid #bb5b2c;
+}
+
+.partners-section .wp-block-group .wp-block-group__inner-container img {
+  margin-top: 30px;
 }
 
 /* News

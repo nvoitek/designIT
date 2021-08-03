@@ -1,13 +1,24 @@
 .partners-section {
-    
     @include medium-section;
-
     background-color: $color__primary;
 
-    h3 {
-        color: #fff;
-        position: relative;
+    .wp-block-group {
+        .wp-block-group__inner-container {
+            display: flex;
+            justify-content: space-between;
 
-        @include line-under;
+    
+            h3 {
+                padding-right: 360px;
+                color: #fff;
+                position: relative;
+    
+                @include line-under;
+            }
+
+            img {
+                margin-top: 30px;
+            }
+        }
     }
 }
