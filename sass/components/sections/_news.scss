@@ -9,13 +9,7 @@
         h3 {
             position: relative;
 
-            &::before {
-                position: absolute;
-                content: '';
-                width: 80px;
-                bottom: -10px;
-                border: 1px solid $color__primary;
-            }
+            @include line-under;
         }
     }
 

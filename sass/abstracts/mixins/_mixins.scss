@@ -9,3 +9,27 @@
 @mixin column-width($numberColumns: 3) {
 	width: map-get($columns, $numberColumns) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
 }
+
+@mixin line-under-styles {
+	position: absolute;
+	left: 0;
+	content: '';
+	width: 80px;
+	bottom: -10px;
+	border: 1px solid $color__teritary;
+}
+
+@mixin line-under {
+	&::before {
+		@include line-under-styles;
+	}
+}
+
+@mixin line-under-centered {
+	&::before {
+		@include line-under-styles;
+		text-align: center;
+		left: 50%;
+		transform: translate(-50%);
+	}
+}

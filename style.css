@@ -1022,10 +1022,11 @@ textarea {
 
 .about-section .about-info h3::before {
   position: absolute;
+  left: 0;
   content: '';
   width: 80px;
   bottom: -10px;
-  border: 1px solid #eb6f31;
+  border: 1px solid #bb5b2c;
 }
 
 /* Services
@@ -1041,13 +1042,14 @@ textarea {
 
 .services-section h3::before {
   position: absolute;
-  text-align: center;
+  left: 0;
   content: '';
   width: 80px;
+  bottom: -10px;
+  border: 1px solid #bb5b2c;
+  text-align: center;
   left: 50%;
   transform: translate(-50%);
-  bottom: -10px;
-  border: 1px solid #eb6f31;
 }
 
 .services-section .services {
@@ -1095,13 +1097,14 @@ textarea {
 
 .products-section h3::before {
   position: absolute;
-  text-align: center;
+  left: 0;
   content: '';
   width: 80px;
+  bottom: -10px;
+  border: 1px solid #bb5b2c;
+  text-align: center;
   left: 50%;
   transform: translate(-50%);
-  bottom: -10px;
-  border: 1px solid #eb6f31;
 }
 
 .products-section .container {
@@ -1257,10 +1260,11 @@ textarea {
 
 .news-section .news-info h3::before {
   position: absolute;
+  left: 0;
   content: '';
   width: 80px;
   bottom: -10px;
-  border: 1px solid #eb6f31;
+  border: 1px solid #bb5b2c;
 }
 
 .news-section .news-gallery {
@@ -1286,6 +1290,46 @@ textarea {
 
 .news-section .news-gallery .row .wp-block-column h4 {
   font-size: 14px;
+}
+
+/* Contact
+--------------------------------------------- */
+.contact-section {
+  padding: 100px 0;
+  background-color: #313131;
+}
+
+.contact-section .contact-logo {
+  width: 120px;
+}
+
+.contact-section .row {
+  justify-content: space-around;
+}
+
+.contact-section .row .contact-info {
+  padding-right: 180px;
+}
+
+.contact-section .row .wp-block-column {
+  margin: 0;
+}
+
+.contact-section .row .wp-block-column p {
+  margin-top: 0;
+  color: #858585;
+  line-height: 2em;
+}
+
+.contact-section .row .wp-block-column ul {
+  margin-left: 0;
+  list-style-type: none;
+  line-height: 2em;
+}
+
+.contact-section .row .wp-block-column ul li a {
+  color: #858585;
+  text-decoration: none;
 }
 
 /*--------------------------------------------------------------

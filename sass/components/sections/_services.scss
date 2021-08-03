@@ -6,16 +6,7 @@
     h3 {
         position: relative;
 
-        &::before {
-            position: absolute;
-            text-align: center;
-            content: '';
-            width: 80px;
-            left: 50%;
-            transform: translate(-50%);
-            bottom: -10px;
-            border: 1px solid $color__primary;
-        }
+        @include line-under-centered;
     }
 
     .services {

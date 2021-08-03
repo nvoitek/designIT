@@ -1,0 +1,41 @@
+.contact-section {
+    padding: 100px 0;
+    background-color: $color__secondary;
+
+    .contact-logo {
+        width: 120px;
+    }
+
+    .row {
+        justify-content: space-around;
+
+        .contact-info {
+            padding-right: 180px;
+        }
+
+        .wp-block-column {
+
+            margin: 0;
+
+            p {
+                margin-top: 0;
+                color: $color__text-teritary;
+                line-height: 2em;
+            }
+
+            ul {
+                margin-left: 0;
+                list-style-type: none;
+                line-height: 2em;
+
+                li {
+
+                    a {
+                        color: $color__text-teritary;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
