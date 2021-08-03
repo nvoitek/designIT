@@ -779,6 +779,25 @@ textarea {
   font-size: 14px;
 }
 
+.main-navigation a::before {
+  position: absolute;
+  left: 0;
+  content: '';
+  width: 80px;
+  bottom: -10px;
+  border: 1px solid #bb5b2c;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%);
+  width: 60%;
+  opacity: 0;
+  transition: 0.3s all;
+}
+
+.main-navigation a:hover::before {
+  opacity: 1;
+}
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -1311,25 +1330,88 @@ textarea {
   padding-right: 180px;
 }
 
-.contact-section .row .wp-block-column {
+.contact-section .row .contact-info p {
   margin: 0;
-}
-
-.contact-section .row .wp-block-column p {
-  margin-top: 0;
   color: #858585;
   line-height: 2em;
+}
+
+.contact-section .row .contact-details p {
+  margin: 0;
+  margin-bottom: 0.5em;
+  color: #858585;
+}
+
+.contact-section .row .wp-block-column {
+  margin: 0;
 }
 
 .contact-section .row .wp-block-column ul {
   margin-left: 0;
   list-style-type: none;
-  line-height: 2em;
+}
+
+.contact-section .row .wp-block-column ul li {
+  margin-bottom: 1em;
+  transition: all 0.3s;
 }
 
 .contact-section .row .wp-block-column ul li a {
   color: #858585;
   text-decoration: none;
+  position: relative;
+}
+
+.contact-section .row .wp-block-column ul li a::before {
+  position: absolute;
+  left: 0;
+  content: '';
+  width: 80px;
+  bottom: -10px;
+  border: 1px solid #bb5b2c;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s all;
+}
+
+.contact-section .row .wp-block-column ul li a:hover::before {
+  opacity: 1;
+}
+
+/* Footer
+--------------------------------------------- */
+.site-footer {
+  padding: 30px 0;
+  background-color: #484848;
+}
+
+.site-footer ul {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-footer ul li p {
+  color: #b5b5b5;
+}
+
+.site-footer ul li p .orange-text {
+  color: #eb6f31;
+}
+
+.site-footer ul li .social-links a {
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.site-footer ul li .social-links a i {
+  color: #eb6f31;
+  transition: 0.3s all;
+}
+
+.site-footer ul li .social-links a i:hover {
+  color: #fff;
 }
 
 /*--------------------------------------------------------------

@@ -66,6 +66,8 @@
 		text-transform: uppercase;
 		color: #fff;
 		font-size: 14px;
+		
+		@include line-under-link-centered;
 	}
 
 	.current_page_item > a,

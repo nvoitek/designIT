@@ -33,3 +33,32 @@
 		transform: translate(-50%);
 	}
 }
+
+@mixin line-under-link {
+	&::before {
+		@include line-under-styles;
+		width: 100%;
+		opacity: 0;
+		transition: 0.3s all;
+	}
+
+	&:hover::before {
+		opacity: 1;
+	}
+}
+
+@mixin line-under-link-centered {
+	&::before {
+		@include line-under-styles;
+		text-align: center;
+		left: 50%;
+		transform: translate(-50%);
+		width: 60%;
+		opacity: 0;
+		transition: 0.3s all;
+	}
+
+	&:hover::before {
+		opacity: 1;
+	}
+}
