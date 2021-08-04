@@ -1,0 +1,19 @@
+.contact-us {
+    @include medium-section;
+
+    .contact-us-info {
+        padding-right: 60px;
+        padding-left: 0;
+
+        h3 {
+            position: relative;
+
+            @include line-under;
+        }
+
+        p {
+            font-size: $font__xlarge_text;
+            font-weight: 600;
+        }
+    }
+}

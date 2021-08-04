@@ -18,23 +18,43 @@ input[type="submit"] {
 	&:focus {
 		border-color: $color__border-button-focus;
 	}
-}
 
-.wp-block-button {
-
-	.wp-block-button__link {
+	&.button {
 		border-radius: 0;
-		transition: all 0.3s;
-	}
-
-	&.button .wp-block-button__link {
 		font-size: 14px;
 		padding: 20px 70px;
 		background-color: transparent;
 		border: solid 3px $color__primary;
+		transition: all 0.3s;
 
 		&:hover {
 			background-color: $color__primary;
+			cursor: pointer;
+		}
+	}
+
+	&.button-primary {
+		color: #fff;
+	}
+
+	&.button-secondary {
+		color: #000;
+	}
+}
+
+.wp-block-button {
+
+	&.button .wp-block-button__link {
+		border-radius: 0;
+		font-size: 14px;
+		padding: 20px 70px;
+		background-color: transparent;
+		border: solid 3px $color__primary;
+		transition: all 0.3s;
+
+		&:hover {
+			background-color: $color__primary;
+			cursor: pointer;
 		}
 	}
 

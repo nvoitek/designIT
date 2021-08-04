@@ -4,11 +4,19 @@
 
     background-color: $color__primary;
 
-    h3 {
-        font-size: $font__small_heading;
-    }
+    .wp-block-columns {
+        margin: 0;
 
-    p {
-        line-height: 2em;
+        .wp-block-column {
+            margin: 0;
+
+            h3 {
+                font-size: $font__small_heading;
+            }
+        
+            p {
+                line-height: 2em;
+            }
+        }
     }
 }

@@ -7,6 +7,12 @@
         margin: 0;
     }
 
+    h1.header-title {
+        font-size: $font__xlarge_heading;
+        color: $color__primary;
+        margin: 0;
+    }
+
     h2 {
         margin-top: 0;
         font-weight: 400;

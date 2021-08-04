@@ -16,8 +16,8 @@ input[type="color"],
 textarea {
 	color: $color__text-input;
 	border: 1px solid $color__border-input;
-	border-radius: 3px;
-	padding: 3px;
+	padding: 10px;
+	width: 100%;
 
 	&:focus {
 		color: $color__text-input-focus;
@@ -30,4 +30,9 @@ select {
 
 textarea {
 	width: 100%;
+}
+
+input[type="submit"] {
+	display: block;
+	margin: 0 auto;
 }
