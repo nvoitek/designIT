@@ -10,6 +10,10 @@
     .wp-block-columns {
         justify-content: space-around;
 
+        @media (max-width: $medium-screen) {
+            flex-direction: column;
+        }
+
         .contact-info {
             padding-right: 180px;
 
@@ -32,7 +36,12 @@
 
             margin: 0;
 
+            @media (max-width: $medium-screen) {
+                margin-bottom: 20px;
+            }
+
             ul {
+                padding: 0;
                 margin-left: 0;
                 list-style-type: none;
 

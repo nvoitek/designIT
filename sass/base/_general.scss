@@ -7,6 +7,10 @@
     max-width: 1455px;
     margin: 0 auto;
 
+    @media (max-width: $xxlarge-screen) {
+        max-width: 1340px;
+    }
+
     @media (max-width: $xlarge-screen) {
         max-width: 1190px;
     }

@@ -94,6 +94,31 @@
 	}
 }
 
+@media screen and (max-width: 37.5em) {
+	.menu-toggle {
+		color: $color__text-secondary;
+		background-color: transparent;
+		padding: 15px;
+		font-size: 1.5em;
+		border: 2px solid $color__primary;
+		transition: all 0.3s;
+
+		&:hover {
+			background-color: $color__primary;
+			border: 2px solid $color__primary;
+			cursor: pointer;
+		}
+	}
+
+	.main-navigation {
+		ul {
+			li {
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+
 .comment-navigation,
 .posts-navigation,
 .post-navigation {
