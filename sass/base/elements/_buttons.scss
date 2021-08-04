@@ -20,49 +20,29 @@ input[type="submit"] {
 	}
 
 	&.button {
-		border-radius: 0;
-		font-size: 14px;
-		padding: 20px 70px;
-		background-color: transparent;
-		border: solid 3px $color__primary;
-		transition: all 0.3s;
-
-		&:hover {
-			background-color: $color__primary;
-			cursor: pointer;
-		}
+		@include button-styles;
 	}
 
 	&.button-primary {
-		color: #fff;
+		@include button-primary-styles;
 	}
 
 	&.button-secondary {
-		color: #000;
+		@include button-secondary-styles;
 	}
 }
 
 .wp-block-button {
 
 	&.button .wp-block-button__link {
-		border-radius: 0;
-		font-size: 14px;
-		padding: 20px 70px;
-		background-color: transparent;
-		border: solid 3px $color__primary;
-		transition: all 0.3s;
-
-		&:hover {
-			background-color: $color__primary;
-			cursor: pointer;
-		}
+		@include button-styles;
 	}
 
 	&.button-primary .wp-block-button__link {
-		color: #fff;
+		@include button-primary-styles;
 	}
 
 	&.button-secondary .wp-block-button__link {
-		color: #000;
+		@include button-secondary-styles;
 	}
 }
