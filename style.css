@@ -1060,7 +1060,7 @@ input[type="submit"] {
 }
 
 .landing-section .wp-block-columns {
-  margin: 0;
+  margin: 0 auto;
 }
 
 .landing-section .wp-block-columns .wp-block-column {
